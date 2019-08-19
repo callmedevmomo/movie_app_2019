@@ -27,8 +27,20 @@ body,
   justify-content: center;
   align-items: center;
   font-weight: 300;
+  animation: fadeIn 1s infinite ease-in;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
 .movies {
   display: flex;
   justify-content: space-between;
